@@ -63,9 +63,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------.                 ,-----------------------------------------.
         ESC,     Q,     W,     E,     R,     T,                       Y,     U,     I,     O,     P,  BSPC,\
   //|------+------+------+------+------+------|                 |------+------+------+------+------+------|
-        TAB,     A,     S,     D,     F,     G,                       H,     J,     K,     L,  SCLN,  QUOT,\
+      CTLTB,     A,     S,     D,     F,     G,                       H,     J,     K,     L,  SCLN,  QUOT,\
   //|------+------+------+------+------+------|                 |------+------+------+------+------+------|
-       LCTL,     Z,     X,     C,     V,     B,                       N,     M,  COMM,   DOT,  SLSH,  RSFT,\
+       LSFT,     Z,     X,     C,     V,     B,                       N,     M,  COMM,   DOT,  SLSH,  RSFT,\
   //|------+------+------+------+------+------+-------|  |------+------+------+------+------+------+------|
                                   LOWER, GUIEI, SFTSPC,      ENT, RAISE, ALTKN \
                               //`---------------------'  `--------------------'
@@ -73,11 +73,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-        ESC,     1,     2,     3,     4,     5,                      6,     7,     8,     9,     0,  BSPC,\
+        ESC,  EXLM,    AT,  HASH,   DLR,  PERC,                   CIRC,  AMPR,  ASTR,  LPRN,  RPRN,  BSPC,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-        TAB,    F1,    F2,    F3,    F4,    F5,                     F6,    F7,    F8,    F9,   F10, XXXXX,\
+       LCTL,  MINS,   EQL, XXXXX, XXXXX, XXXXX,                   MINS,   EQL,  UNDS,  PLUS,  PIPE,   GRV,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-       LCTL,   F11,   F12,    F8,    F9,   F10,                    F11,   F12,   F13,   F14,   F15, XXXXX,\
+        TAB,  UNDS,  PLUS, XXXXX, XXXXX, XXXXX,                   LCBR,  RCBR,  LBRC,  RBRC,  BSLS,  TILD,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
                                   GUIEI, LOWER,SFTSPC,      ENT, RAISE, ALTKN \
                               //`--------------------'  `--------------------'
@@ -85,11 +85,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-        ESC,  EXLM,    AT,  HASH,   DLR,  PERC,                   CIRC,  AMPR,  ASTR,  LPRN,  RPRN,  BSPC,\
+        ESC,     1,     2,     3,     4,     5,                      6,     7,     8,     9,     0,  BSPC,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-        TAB,  MINS,   EQL, XXXXX, XXXXX, XXXXX,                   LEFT,  DOWN,    UP, RIGHT,  PIPE,   GRV,\
+        TAB, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   LEFT,  DOWN,    UP, RIGHT,   F12,   F13,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-       LCTL,  UNDS,  PLUS, XXXXX, XXXXX, XXXXX,                   LCBR,  RCBR,  LBRC,  RBRC,  BSLS,  TILD,\
+       LCTL,    F1,    F2,    F3,    F4,    F5,                     F6,    F7,    F8,    F9,   F10,   F11,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
                                   GUIEI, LOWER,   SPC,      ENT, RAISE, ALTKN \
                               //`--------------------'  `--------------------'
